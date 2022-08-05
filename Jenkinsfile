@@ -1,7 +1,7 @@
 pipeline {
   agent any
   stages {
-    stage {
+    stage('parallel') {
       parallel {
         step ('Setp 1') {
           echo 'Step 1 running...'
