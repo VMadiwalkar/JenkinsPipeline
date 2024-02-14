@@ -5,7 +5,7 @@ pipeline {
       parallel {
         stage ('Stage 1') {
           steps ('Setp 1') {
-            echo 'Step 1 running...'
+            echo "Username: ${USERNAME}" 
           }
         }
         stage ('stage 2') {
